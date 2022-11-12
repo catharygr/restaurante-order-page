@@ -71,3 +71,62 @@ main {
 }
 
 
+#ticket {
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+#ticket > h3 {
+  text-align: center;
+}
+
+.producto-unico {
+  display: flex;
+  gap: 1rem;
+  margin-block-end: 5px;
+
+}
+.producto-unico :last-child {
+  margin-inline-start: auto;
+}
+
+.btn-quitar {
+  background-color:  #E5E7EB;
+  border: none;
+  padding-inline: 10px;
+  color: red;
+  cursor: pointer;
+}
+
+.totales {
+  border-block-start: 2px solid #555;
+  padding-top: 10px;
+}
+
+.totales-elemento {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-block-end: 2px;
+}
+
+.no-disponible {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.btn-pedido {
+  background-color: #16DB99;
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  font-weight: 900;
+  color: whitesmoke;
+  margin-block-start: 1rem;
+  cursor: pointer;
+}
