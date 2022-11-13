@@ -56,8 +56,11 @@ main {
   background-color: transparent;
   border: 1px solid #999;
   cursor: pointer;
+  transition: background-color 250ms;
+}
 
-
+.add-btn:hover {
+  background-color: #16DB99;
 }
 
 .emoji {
@@ -118,6 +121,8 @@ main {
   color: #777;
 }
 
+
+
 .btn-pedido {
   background-color: #16DB99;
   width: 100%;
@@ -128,5 +133,9 @@ main {
   font-weight: 900;
   color: whitesmoke;
   margin-block-start: 1rem;
-  cursor: pointer;
+  transition: box-shadow 250ms;
+}
+
+.btn-pedido:hover {
+  box-shadow: 1px 9px 39px -14px rgba(26,46,15,0.75);
 }
