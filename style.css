@@ -5,13 +5,13 @@
 }
 
 body {
-  background-color: #E5E7EB;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #e5e7eb;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .container {
   max-width: 600px;
-  margin-inline: auto;  
+  margin-inline: auto;
 }
 
 header {
@@ -60,7 +60,7 @@ main {
 }
 
 .add-btn:hover {
-  background-color: #16DB99;
+  background-color: #16db99;
 }
 
 .emoji {
@@ -73,14 +73,12 @@ main {
   margin-top: 5px;
 }
 
-
 #ticket {
   padding-block: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-
 
 #ticket > h3 {
   text-align: center;
@@ -90,14 +88,13 @@ main {
   display: flex;
   gap: 1rem;
   margin-block-end: 5px;
-
 }
 .producto-unico :last-child {
   margin-inline-start: auto;
 }
 
 .btn-quitar {
-  background-color:  #E5E7EB;
+  background-color: #e5e7eb;
   border: none;
   padding-inline: 10px;
   color: red;
@@ -121,10 +118,8 @@ main {
   color: #777;
 }
 
-
-
 .btn-pedido {
-  background-color: #16DB99;
+  background-color: #16db99;
   width: 100%;
   border: none;
   font-size: 1rem;
@@ -137,5 +132,44 @@ main {
 }
 
 .btn-pedido:hover {
-  box-shadow: 1px 9px 39px -14px rgba(26,46,15,0.75);
+  box-shadow: 1px 9px 39px -14px rgba(26, 46, 15, 0.75);
+}
+
+.dialogo {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: 350px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.dialogo::backdrop {
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  position: fixed;
+  inset: 0;
+  background-color: #0006;
+}
+
+.dialogo > input {
+  border: 1px solid gray;
+  padding: 10px;
+  font-size: inherit;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+input {
+  border-radius: 5px;
+}
+
+.pago-exito-msg {
+  background-color: #d4f2e9;
+  padding: 30px 10px;
+  text-align: center;
+  border-radius: 10px;
 }

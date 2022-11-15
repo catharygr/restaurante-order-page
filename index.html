@@ -1,61 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Burguer Guantanamera - Página de pedidos</title>
-  <link rel="stylesheet" href="./style.css">
-  <script defer type="module" src="./script/index.js"></script>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div>
-        <h1>Restaurante "Guantanamera"</h1>
-        <p>La mejor burguer y pizzeria del pueblo. </p>
-      </div>
-    </header>
-    <main>
-      <div id="productos"> </div>
-      <div id="ticket">
-        <!-- <h3>Su pedido</h3>
-
-        <div id="producto-listado">
-          <div class="producto-unico">
-            <h3>Pizza</h3>
-            <button class="btn-quitar">Remover</button>
-            <p>14€</p>
-          </div>
-          <div class="producto-unico">
-            <h3>Pizza</h3>
-            <button class="btn-quitar">Remover</button>
-            <p>14€</p>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burguer Guantanamera - Página de pedidos</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer type="module" src="./script/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div>
+          <h1>Restaurante "Guantanamera"</h1>
+          <p>La mejor burguer y pizzeria del pueblo.</p>
         </div>
+      </header>
+      <main>
+        <div id="productos"></div>
+        <div id="ticket"></div>
 
-        <div class="totales">
-          <div class="totales-elemento">
-            <h3>Precio:</h3>
-            <p>28€</p>
-          </div>
-          <div class="totales-elemento">
-            <p class="no-disponible">Descuento combo: <span>10%</span></p>
-            <p>0€</p>
-          </div>
-          <div class="totales-elemento">
-            <h3>Precio Total:</h3>
-            <p>36€</p>
-          </div>
-          <button class="btn-pedido">Completar pedido</button>
-
-        </div> -->
-      </div>
-      
-
-    </main>
-
-  </div>
-  
-</body>
+        <dialog id="dialogo" class="dialogo">
+          <h2>Datos de pago</h2>
+          <input id="modal" type="text" placeholder="Su nombre" />
+          <input type="text" placeholder="Numero de su tarjeta" />
+          <input type="text" placeholder="CVV" />
+          <button class="btn-pedido" id="btn-pagar">Pagar</button>
+        </dialog>
+      </main>
+    </div>
+  </body>
 </html>
